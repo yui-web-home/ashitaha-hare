@@ -11,8 +11,8 @@
 
   <style>
     :root {
-    --blue: #c7e7f4;
---blue-deep: #6fb8d8;
+   --blue: #b8e1f2;
+--blue-deep: #59add2;
       --green: #dce8df;
       --green-deep: #6f9280;
       --yellow: #f5df9b;
@@ -153,13 +153,21 @@
     }
 
     .hero-label {
-      display: inline-block;
-      color: var(--green-deep);
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: .08em;
-      margin-bottom: 20px;
-    }
+  display: block;
+  color: var(--green-deep);
+  font-size: clamp(20px, 2.2vw, 28px);
+  font-weight: 700;
+  letter-spacing: .04em;
+  margin-bottom: 6px;
+}
+
+.hero-english {
+  color: var(--green-deep);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .18em;
+  margin-bottom: 28px;
+}
 
     h1 {
       font-size: clamp(38px, 6vw, 68px);
@@ -613,7 +621,9 @@
         <div class="hero-label">
   訪問看護ステーション　明日は晴
 </div>
-
+<div class="hero-english">
+  HOME NURSING CARE
+</div>
         <h1>
           今日の不安を、<br>
           明日の安心へ。
