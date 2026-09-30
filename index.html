@@ -683,7 +683,54 @@
     padding: 30px 24px;
   }
 }
-  
+/* 訪問看護をメインにしたサービス表示 */
+
+.service-select-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 900px;
+  margin: 50px auto 0;
+}
+
+.service-select-card.service-main {
+  width: 100%;
+  padding: 52px 56px;
+  background: #d7eef7;
+}
+
+.service-select-card.service-sub {
+  width: 82%;
+  margin-left: auto;
+  padding: 38px 44px;
+  background: #e7eee9;
+}
+
+.service-tag {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  color: var(--green-deep);
+}
+
+.service-main h3 {
+  font-size: clamp(26px, 3vw, 36px);
+}
+
+.service-sub h3 {
+  font-size: clamp(21px, 2.4vw, 28px);
+}
+
+@media (max-width: 700px) {
+  .service-select-card.service-main,
+  .service-select-card.service-sub {
+    width: 100%;
+    margin-left: 0;
+    padding: 32px 24px;
+  }
+}  
   </style>
 </head>
 
@@ -741,32 +788,34 @@
   <div class="container">
 
     <div class="service-select-heading">
-      <div class="eyebrow">OUR SERVICES</div>
-      <h2>明日は晴のサービス</h2>
+      <div class="eyebrow">HOME NURSING CARE</div>
+      <h2>訪問看護を中心に、<br>医療と介護をつなぐ。</h2>
       <p>
-        訪問看護と居宅介護支援。<br>
-        それぞれの専門性を活かし、地域での暮らしを支えます。
+        住み慣れたご自宅で安心して暮らし続けられるよう、<br>
+        医療機関と連携しながら、療養生活を支えます。
       </p>
     </div>
 
     <div class="service-select-grid">
 
-      <a href="#service" class="service-select-card">
-        <span class="service-number">01</span>
+      <a href="#service" class="service-select-card service-main">
+        <div class="service-tag">訪問看護</div>
         <h3>訪問看護ステーション<br>明日は晴</h3>
         <p>
-          住み慣れたご自宅での療養生活を、<br>
-          看護の視点から支えます。
+          健康状態の観察や療養生活の支援、<br>
+          医師の指示に基づく処置など、<br>
+          ご本人の状態に合わせた訪問看護を行います。
         </p>
         <span class="service-link">訪問看護について →</span>
       </a>
 
-      <a href="#care-support" class="service-select-card">
-        <span class="service-number">02</span>
-        <h3>居宅介護支援事業所<br>明日は晴</h3>
+      <a href="#care-support" class="service-select-card service-sub">
+        <div class="service-tag">居宅介護支援も併設</div>
+        <h3>介護のことも、<br>一緒にご相談いただけます。</h3>
         <p>
-          ケアマネジャーが介護のご相談や、<br>
-          ケアプランの作成・調整を行います。
+          「介護サービスを利用したい」<br>
+          「これからの暮らしについて相談したい」など、<br>
+          ケアマネジャーへのご相談も可能です。
         </p>
         <span class="service-link">居宅介護支援について →</span>
       </a>
@@ -775,8 +824,6 @@
 
   </div>
 </section>
-
-  <!-- CONCERNS -->
   <section class="section-soft">
     <div class="container">
 
