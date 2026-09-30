@@ -593,6 +593,97 @@
         min-height: 240px;
       }
     }
+ 
+  /* ===== SERVICES SELECT ===== */
+
+.service-select {
+  padding: 90px 0;
+  background: #f7fbfc;
+}
+
+.service-select-heading {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.service-select-heading .eyebrow {
+  margin-bottom: 12px;
+}
+
+.service-select-heading h2 {
+  font-size: clamp(30px, 4vw, 46px);
+  margin: 0 0 18px;
+}
+
+.service-select-heading p {
+  line-height: 1.9;
+  margin: 0;
+}
+
+.service-select-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.service-select-card {
+  display: block;
+  padding: 42px;
+  border-radius: 28px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease;
+}
+
+.service-select-card:first-child {
+  background: #d9f0f8;
+}
+
+.service-select-card:last-child {
+  background: #e4eee8;
+}
+
+.service-select-card:hover {
+  transform: translateY(-4px);
+}
+
+.service-number {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  margin-bottom: 22px;
+}
+
+.service-select-card h3 {
+  font-size: clamp(22px, 2.5vw, 30px);
+  line-height: 1.5;
+  margin: 0 0 18px;
+}
+
+.service-select-card p {
+  line-height: 1.9;
+  margin-bottom: 28px;
+}
+
+.service-link {
+  font-weight: 700;
+}
+
+@media (max-width: 700px) {
+  .service-select {
+    padding: 65px 0;
+  }
+
+  .service-select-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-select-card {
+    padding: 30px 24px;
+  }
+}
+  
   </style>
 </head>
 
@@ -645,7 +736,45 @@
       </div>
     </div>
   </section>
+<!-- SERVICES SELECT -->
+<section class="service-select">
+  <div class="container">
 
+    <div class="service-select-heading">
+      <div class="eyebrow">OUR SERVICES</div>
+      <h2>明日は晴のサービス</h2>
+      <p>
+        訪問看護と居宅介護支援。<br>
+        それぞれの専門性を活かし、地域での暮らしを支えます。
+      </p>
+    </div>
+
+    <div class="service-select-grid">
+
+      <a href="#service" class="service-select-card">
+        <span class="service-number">01</span>
+        <h3>訪問看護ステーション<br>明日は晴</h3>
+        <p>
+          住み慣れたご自宅での療養生活を、<br>
+          看護の視点から支えます。
+        </p>
+        <span class="service-link">訪問看護について →</span>
+      </a>
+
+      <a href="#care-support" class="service-select-card">
+        <span class="service-number">02</span>
+        <h3>居宅介護支援事業所<br>明日は晴</h3>
+        <p>
+          ケアマネジャーが介護のご相談や、<br>
+          ケアプランの作成・調整を行います。
+        </p>
+        <span class="service-link">居宅介護支援について →</span>
+      </a>
+
+    </div>
+
+  </div>
+</section>
 
   <!-- CONCERNS -->
   <section class="section-soft">
