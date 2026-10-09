@@ -247,10 +247,11 @@
       margin: 0 0 12px;
     }
 
-    .section-intro {
-      max-width: 900px;
-      margin-bottom: 45px;
-    }
+   .section-intro {
+  max-width: 900px;
+  margin-bottom: 45px;
+  font-size: clamp(18px, 1.5vw, 19px);
+}
 
     /* --------------------
        CONCERNS
@@ -271,20 +272,22 @@
       display: flex;
       gap: 12px;
       align-items: flex-start;
-    font-size: 17px;
+    font-size: 19px;
     }
 
     .check {
       color: var(--green-deep);
       font-weight: 700;
+      
     }
 
     .support-message {
-      margin-top: 42px;
-      padding: 30px;
-      background: var(--green);
-      border-radius: 20px;
-    }
+  margin-top: 42px;
+  padding: 30px;
+  background: var(--green);
+  border-radius: 20px;
+  font-size: clamp(18px, 1.5vw, 19px);
+}
 .support-message strong {
   font-size: 20px;
 }
@@ -298,12 +301,13 @@
       gap: 20px;
     }
 
-    .service-card {
-      background: #eef8fb;
-      border: 1px solid var(--line);
-      border-radius: 20px;
-      padding: 30px 26px;
-    }
+   .service-card {
+  background: #eef8fb;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 30px 26px;
+  font-size: clamp(18px, 1.5vw, 19px);
+}
 .service-card:nth-child(even) {
  background: #fff7dc;
 }
@@ -324,7 +328,10 @@
       padding: 50px;
       box-shadow: 0 14px 45px rgba(61,82,75,.07);
     }
-
+.strength-box > p {
+  font-size: clamp(18px, 1.6vw, 20px);
+  line-height: 1.8;
+}
     .team {
       display: grid;
      grid-template-columns: 1fr 150px 1fr;
@@ -636,7 +643,7 @@
 }
 
 .service-select-heading p {
-    font-size: 16px;
+   font-size: clamp(18px, 1.5vw, 19px);
     line-height: 1.8;
     margin: 0 auto;
     text-align: center;
@@ -685,6 +692,7 @@
 }
 
 .service-select-card p {
+  font-size: 20px;
   line-height: 1.9;
   margin-bottom: 28px;
 }
@@ -706,9 +714,9 @@
     padding: 30px 24px;
   }
 .service-select-card p {
-    font-size: 16px;
-    line-height: 1.8;
-    margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 24px;
 }
   .mobile-line {
   display: block;
